@@ -27,7 +27,7 @@ void dfs(int si, int sj)
         ci = si + d[i].first;
         cj = sj + d[i].second;
 
-        if(valid(ci, cj) && !visited[ci][cj])
+        if(valid(ci, cj) && !visited[ci][cj]) //Checking if the index in Valid && Index is not visited yet;
             dfs(ci, cj);
 
         // cout << ci << " " << cj << endl;
