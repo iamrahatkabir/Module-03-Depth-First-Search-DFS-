@@ -37,7 +37,7 @@ void bfs(int si, int sj)
             int ci = par_i + d[i].first;
             int cj = par_j + d[i].second;
     
-            if(valid(ci, cj) && !visited[ci][cj])
+            if(valid(ci, cj) && !visited[ci][cj] && grid[ci][cj] == '.')
             {
                 // cout << "Hello" << endl;
                 q.push({ci, cj});
